@@ -1,56 +1,61 @@
 # 🚀 AI-Powered Resume Reviewer
 
-![Hero Section Demo](public/hero.webp) 
+![Hero Section Demo](public/hero.webp)
 
-Selamat datang di repositori **AI-Powered Resume Reviewer**! Ini adalah aplikasi web modern kelas premium yang mempermudah para *job seekers* untuk mendapatkan umpan balik (feedback) seketika terkait CV/Resume mereka menggunakan ketajaman otak kecerdasan buatan dari **Google Gemini**.
+Welcome to the **AI-Powered Resume Reviewer** repository! This is a premium-class modern web application that makes it easy for _job seekers_ to get instant feedback on their resumes/CVs using the powerful intelligence of **Google Gemini**.
 
-Dibangun dengan **Next.js App Router** untuk kecepatan, dipoles dengan **Tailwind CSS & Framer Motion** untuk antarmuka *glassmorphism* yang cantik, serta dilengkapi pengerjaan parsing PDF dan Word (*client-to-server*), ini merupakan prototipe aplikasi siap-pakai yang luar biasa.
+Built with **Next.js App Router** for speed, polished with **Tailwind CSS & Framer Motion** for a beautiful _glassmorphism_ interface, and equipped with PDF and Word document parsing (_client-to-server_), this is an impressive ready-to-use prototype application.
 
-## ✨ Fitur Utama
+## ✨ Key Features
 
-- **Premium UI/UX:** Antarmuka bergaya elegan dan modern dengan warna indigo yang mewah.
-- **Drag & Drop Uploader:** Mendukung *upload file* `.pdf` dan `.docx` dengan animasi interaktif.
-- **Pemrosesan CV Aman:** Pemrosesan AI dilakukan sepenuhnya di *Backend/Server API* (Next.js API Routes). Kunci *API key* Anda 100% aman dan tidak terekspos ke *browser* pengguna.
-- **Google Gemini 2.5 Flash Integration:** Memanfaatkan model AI keluaran terbaru dengan porsi gratis yang sangat besar untuk *developer*. 
-- **Analisis Mendalam:** Memberikan skor rata-rata (0-100), mendeteksi kekuatan, kelemahan, serta saran perbaikan *(actionable recommendations)* berstandar ATS *(Applicant Tracking System)*.
+- **Premium UI/UX:** Elegant and modern interface with luxurious indigo colors.
+- **Drag & Drop Uploader:** Supports uploading `.pdf` and `.docx` files with interactive animations.
+- **Secure Resume Processing:** AI processing is performed entirely on the _Backend/Server API_ (Next.js API Routes). Your _API key_ is 100% safe and never exposed to the user's _browser_.
+- **Google Gemini 2.5 Flash Integration:** Leverages the latest AI model with a generous free tier for _developers_.
+- **In-Depth Analysis:** Provides an average score (0-100), detects strengths, weaknesses, and _actionable recommendations_ based on ATS _(Applicant Tracking System)_ standards.
 
 ## 🛠️ Tech Stack
 
 - **Framework:** [Next.js (v15 App Router)](https://nextjs.org)
-- **Styling:** [Tailwind CSS v4](https://tailwindcss.com) 
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com)
 - **Animations:** [Framer Motion](https://www.framer.com/motion/)
 - **Icons:** [Lucide React](https://lucide.dev/)
-- **Document Parsing:** `pdf-parse` (untuk PDF) dan `mammoth` (untuk Word DOCX)
+- **Document Parsing:** `pdf-parse` (for PDF) and `mammoth` (for Word DOCX)
 - **AI Engine:** [@google/generative-ai](https://www.npmjs.com/package/@google/generative-ai) (Google Gemini API)
 
-## 🏃 Cara Menjalankan Secara Lokal (Local Development)
+## 🏃 Running Locally (Local Development)
 
-Ikuti langkah-langkah di bawah ini untuk mencoba aplikasinya di komputer Anda:
+Follow the steps below to try the application on your computer:
 
-### 1. Instalasi Node.js & Dependencies
-Pastikan komputer Anda sudah terinstal *Node.js*. Lalu, buka terminal di *folder* proyek ini dan ketikkan:
+### 1. Install Node.js & Dependencies
+
+Make sure _Node.js_ is installed on your computer. Then, open a terminal in this project _folder_ and run:
+
 ```bash
 npm install
 ```
 
-### 2. Dapatkan API Key Google Gemini (Gratis!)
-- Masuk ke [Google AI Studio](https://aistudio.google.com/app/apikey).
-- Klik tombol **"Create API key"**.
-- Salin Kunci (Key) rahasia Anda.
+### 2. Get Your Google Gemini API Key (Free!)
 
-### 3. Konfigurasi File Environment
-- Di folder utama proyek ini, buat sebuah file (atau gunakan yang sudah ada) bernama `.env`.
-- Masukkan *API key* dari langkah sebelumnya dengan format seperti ini:
+- Go to [Google AI Studio](https://aistudio.google.com/app/apikey).
+- Click the **"Create API key"** button.
+- Copy your secret key.
+
+### 3. Configure Environment File
+
+- In the root folder of this project, create a file (or use an existing one) named `.env`.
+- Add the _API key_ from the previous step in this format:
+
 ```env
-GEMINI_API_KEY=KUNCI_RAHASIA_ANDA_DISINI
+GEMINI_API_KEY=YOUR_SECRET_KEY_HERE
 ```
 
-### 4. Nyalakan Development Server
+### 4. Start the Development Server
+
 ```bash
 npm run dev
 ```
-Buka browser dan arahkan ke alamat [http://localhost:3000](http://localhost:3000). Aplikasi siap digunakan!
+
+Open your browser and navigate to [http://localhost:3000](http://localhost:3000). The application is ready to use!
 
 ---
-
-💡 *Proyek ini dibuat sebagai inisiatif asisten web development kelas dunia (Antigravity).*
