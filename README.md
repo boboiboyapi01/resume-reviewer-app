@@ -1,6 +1,6 @@
 # 🚀 AI-Powered Resume Reviewer
 
-![Hero Section Demo](public/hero.png) <!-- Nanti Anda bisa menambahkan screenshot aplikasi di sini -->
+![Hero Section Demo](public/hero.webp) 
 
 Selamat datang di repositori **AI-Powered Resume Reviewer**! Ini adalah aplikasi web modern kelas premium yang mempermudah para *job seekers* untuk mendapatkan umpan balik (feedback) seketika terkait CV/Resume mereka menggunakan ketajaman otak kecerdasan buatan dari **Google Gemini**.
 
