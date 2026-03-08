@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { ReviewResultType } from "@/types/review";
 import { GoogleGenerativeAI } from "@google/generative-ai";
-import { PDFParse } from "pdf-parse";
+import pdfParse from "pdf-parse";
 import mammoth from "mammoth";
 
 export async function POST(req: NextRequest) {
@@ -51,8 +51,7 @@ export async function POST(req: NextRequest) {
     let extractedText = "";
 
     if (file.type === "application/pdf") {
-      const pdfParser = new PDFParse({ data: new Uint8Array(buffer) });
-      const parsedPdf = await pdfParser.getText();
+      const parsedPdf = await pdfParse(buffer);
       extractedText = parsedPdf.text;
     } else if (file.type === "application/vnd.openxmlformats-officedocument.wordprocessingml.document") {
       const parsedDocx = await mammoth.extractRawText({ buffer });
